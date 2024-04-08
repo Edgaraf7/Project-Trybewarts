@@ -42,3 +42,13 @@
   width: 675px;
   /* Outros estilos para o formulário, se necessário */
 }
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: 20px; /* Espaçamento entre o formulário e a imagem */
+}
