@@ -68,3 +68,6 @@
 #input-email {
   margin-right: 10px; /* Espaçamento entre os campos de Email e Casa */
 }
+.radio-wrapper {
+  margin-top: 5px; /* Espaçamento entre o label e os radio buttons */
+}
