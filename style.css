@@ -38,6 +38,7 @@
 
 .trybewarts-form {
   display: flex;
+  flex-direction: column; /* Define a direção dos itens como coluna */
   width: 675px;
   /* Outros estilos para o formulário, se necessário */
 }
