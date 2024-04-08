@@ -1,5 +1,30 @@
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(50, 167, 145);
   height: 50px;
+  padding: 0 20px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input, .trybewarts-login button {
+  margin-right: 10px;
+}
+
+.trybewarts-login button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.trybewarts-login button:hover {
+  background-color: white;
+  color: rgb(50, 167, 145);
 }
