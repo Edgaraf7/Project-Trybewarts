@@ -52,3 +52,12 @@
   height: 500px;
   margin-left: 20px; /* Espaçamento entre o formulário e a imagem */
 }
+
+.name-wrapper {
+  display: flex;
+}
+
+#input-name {
+  margin-right: 10px; /* Espaçamento entre os campos de Nome e Sobrenome */
+}
+
