@@ -28,3 +28,16 @@
   background-color: white;
   color: rgb(50, 167, 145);
 }
+
+.main {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  margin-top: 20px; /* Espaçamento superior para separar do header */
+}
+
+.trybewarts-form {
+  display: flex;
+  width: 675px;
+  /* Outros estilos para o formulário, se necessário */
+}
