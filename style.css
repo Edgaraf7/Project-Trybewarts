@@ -61,3 +61,10 @@
   margin-right: 10px; /* Espaçamento entre os campos de Nome e Sobrenome */
 }
 
+.email-house-wrapper {
+  display: flex;
+}
+
+#input-email {
+  margin-right: 10px; /* Espaçamento entre os campos de Email e Casa */
+}
