@@ -27,3 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event listener para o formulário de login
   loginForm.addEventListener('submit', validarLogin);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('comment');
+  const counter = document.getElementById('counter');
+
+  // Configura o valor inicial do contador
+  counter.textContent = 500;
+
+  // Adiciona um evento de entrada para detectar mudanças no textarea
+  textarea.addEventListener('input', () => {
+    // Atualiza o contador com o número de caracteres restantes
+    const remainingCharacters = 500 - textarea.value.length;
+    counter.textContent = remainingCharacters >= 0 ? remainingCharacters : 0;
+  });
+});
