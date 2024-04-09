@@ -81,3 +81,12 @@ footer {
   color: white; /* Cor do texto do rodapé */
   padding: 10px 0; /* Espaçamento interno do rodapé */
 }
+.trybewarts-header-logo {
+  height: 100%; /* Define a altura da logo para preencher toda a altura do header */
+  margin-left: 20px; /* Espaçamento entre a logo e o título */
+}
+
+#submit-btn {
+  width: 100px; /* Definindo a largura do botão igual à largura da checkbox */
+  margin-top: 10px; /* Espaçamento superior para separar do checkbox */
+}
