@@ -71,3 +71,13 @@
 .radio-wrapper {
   margin-top: 5px; /* Espaçamento entre o label e os radio buttons */
 }
+
+footer {
+  text-align: center; /* Centraliza o texto */
+  position: fixed; /* Fixa o rodapé na tela */
+  bottom: 0; /* Define a posição do rodapé no final da tela */
+  width: 100%; /* Define a largura do rodapé para ocupar toda a largura da tela */
+  background-color: rgb(50, 167, 145); /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto do rodapé */
+  padding: 10px 0; /* Espaçamento interno do rodapé */
+}
