@@ -1,15 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-size: 16px; /* Altere o valor para o tamanho de fonte desejado */
-  background-color: #E9E9E9; /* Mantive a cor de fundo do corpo */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+}
+
+.form-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 50px; /* Ajusta o espaçamento do topo conforme necessário */
+}
+
+.trybe-colored-logo {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 50px; /* Ajusta o espaçamento do topo conforme necessário */
+}
+
+#input-name , #input-lastname , #input-email , #house , #email-input , #password-input {
+  margin: 3px;
 }
 
 .header {
   display: flex;
+  background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(50, 167, 145);
-  height: 50px;
-  padding: 0 20px;
+  padding: 20px;
+}
+
+form {
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  height: 40px;
+}
+
+h1 {
+  font-size: large;
+  color: white;
 }
 
 .trybewarts-login {
@@ -17,81 +55,149 @@ body {
   align-items: center;
 }
 
-.trybewarts-login input , .trybewarts-login button {
-  margin-right: 10px;
+#password-input {
+  width: 100px;
 }
 
-.trybewarts-login button {
-  background-color: transparent;
-  border: 1px solid white;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#password-input , #input-email , #input-name , #input-lastname , #email-input {
+  border-radius: 5px;
+  border: 1px rgb(131, 131, 131) solid;
+  height: 25px;
+}
+
+#house {
+  border-radius: 5px;
+  border: 1px rgb(131, 131, 131) solid;
+}
+
+#name-container {
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+#house-container {
+  border-bottom: 2px solid rgb(131, 131, 131);
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  height: 150px;
+}
+
+#family-container {
+  padding-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: 2px solid rgb(131, 131, 131);
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#content-container , #rate-container , #textarea-container {
+  padding-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgb(131, 131, 131);
+}
+
+#textarea-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#agreement-container {
+  margin-top: 15px;
+  display: block;
+}
+
+#counter {
+  align-self: flex-end;
+  margin-top: -2px;
+  font-size: small;
+}
+
+#login-button , #submit-btn {
   color: white;
-  padding: 5px 10px;
-  cursor: pointer;
+  background-color: rgb(64, 22, 104);
+  width: 90px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
 }
 
-.trybewarts-login button:hover {
-  background-color: white;
-  color: rgb(50, 167, 145);
-}
-
-.main {
+main {
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  margin-top: 20px; /* Espaçamento superior para separar do header */
-}
-
-.trybewarts-form {
-  display: flex;
-  flex-direction: column; /* Define a direção dos itens como coluna */
-  width: 675px;
-}
-
-.form-wrapper {
-  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
   align-items: center;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin-left: 20px; /* Espaçamento entre o formulário e a imagem */
 }
 
-.name-wrapper {
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  width: 200px;
+}
+
+.input-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline {
   display: flex;
 }
 
-#input-name {
-  margin-right: 10px; /* Espaçamento entre os campos de Nome e Sobrenome */
-}
-
-.email-house-wrapper {
+.family {
   display: flex;
+  flex-direction: column;
 }
 
-#input-email {
-  margin-right: 10px; /* Espaçamento entre os campos de Email e Casa */
-}
-
-.radio-wrapper {
-  margin-top: 5px; /* Espaçamento entre o label e os radio buttons */
-}
-
-footer {
-  text-align: center; /* Centraliza o texto */
-  position: fixed; /* Fixa o rodapé na tela */
-  bottom: 0; /* Define a posição do rodapé no final da tela */
-  width: 100%; /* Define a largura do rodapé para ocupar toda a largura da tela */
-  background-color: rgb(50, 167, 145); /* Cor de fundo do rodapé */
-  color: white; /* Cor do texto do rodapé */
-  padding: 10px 0; /* Espaçamento interno do rodapé */
-}
-.trybewarts-header-logo {
-  height: 100%; /* Define a altura da logo para preencher toda a altura do header */
-  margin-left: 20px; /* Espaçamento entre a logo e o título */
+.subject {
+  display: flex;
+  flex-direction: column;
 }
 
 #submit-btn {
-  width: 100px; /* Definindo a largura do botão igual à largura da checkbox */
-  margin-top: 10px; /* Espaçamento superior para separar do checkbox */
+  width: 100%;
+}
+
+#submit-btn:disabled {
+  background-color: rgb(131, 131, 131);
+  color: rgb(197, 197, 197);
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  padding: 10px;
+}
+
+#middle-container {
+  display: flex;
+  flex-wrap: wrap;
 }
