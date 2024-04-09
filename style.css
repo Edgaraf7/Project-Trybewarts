@@ -1,3 +1,8 @@
+body {
+  font-size: 16px; /* Altere o valor para o tamanho de fonte desejado */
+  background-color: #E9E9E9; /* Mantive a cor de fundo do corpo */
+}
+
 .header {
   display: flex;
   justify-content: space-between;
